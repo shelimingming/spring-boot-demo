@@ -17,6 +17,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-boot-admin-simple</module>
+        <module>spring-boot-admin-eureka</module>
     </modules>
 
     <name>springboot</name>
