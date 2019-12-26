@@ -25,6 +25,7 @@
         <module>spring-boot-helloworld</module>
         <module>spring-boot-freemarker</module>
         <module>spring-boot-log</module>
+        <module>spring-boot-actuator</module>
     </modules>
 
     <build>
