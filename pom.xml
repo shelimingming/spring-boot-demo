@@ -26,6 +26,7 @@
         <module>spring-boot-freemarker</module>
         <module>spring-boot-log</module>
         <module>spring-boot-actuator</module>
+        <module>spring-boot-mybatis</module>
     </modules>
 
     <build>

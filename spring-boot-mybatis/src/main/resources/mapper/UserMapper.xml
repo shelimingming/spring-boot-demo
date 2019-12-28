@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 ，如果使用接口动态代理，这里必须是接口的全路径名-->
+<mapper namespace="com.sheliming.dao.UserMapper">
+    <cache/>
+    <!-- statement，内容：sql语句。id：唯一标识，随便写，在同一个命名空间下保持唯一
+        resultType：sql语句查询结果集的封装类型,user即为数据库中的表
+      -->
+    <select id="queryUserById" resultType="com.sheliming.domain.User">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="queryUserAll" resultType="com.sheliming.domain.User">
+        select * from user;
+    </select>
+
+    <insert id="insertUser" parameterType="com.sheliming.domain.User">
+        INSERT INTO user (
+        name,
+        birth
+        )
+        VALUES
+        (
+        #{name},
+        #{birth}
+        );
+    </insert>
+
+    <update id="updateUser" parameterType="com.sheliming.domain.User">
+        UPDATE user
+        <trim prefix="set" suffixOverrides=",">
+            <if test="name!=null">name = #{name},</if>
+            <if test="birth!=null">birth = #{birth},</if>
+        </trim>
+        WHERE
+        (id = #{id});
+    </update>
+
+    <delete id="deleteUser">
+        delete from user where id=#{id}
+    </delete>
+
+
+</mapper>
+
