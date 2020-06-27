@@ -27,6 +27,9 @@
         <module>spring-boot-log</module>
         <module>spring-boot-actuator</module>
         <module>spring-boot-mybatis</module>
+        <module>spring-boot-admin-eureka</module>
+        <module>spring-boot-admin-simple</module>
+        <module>spring-boot-error</module>
     </modules>
 
     <build>

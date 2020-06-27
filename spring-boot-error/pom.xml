@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-test</artifactId>
+    <artifactId>spring-boot-error</artifactId>
 
-    <name>spring-boot-actuator</name>
+    <name>spring-boot-error</name>
 
     <dependencies>
         <dependency>
