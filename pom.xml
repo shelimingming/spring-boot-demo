@@ -30,6 +30,7 @@
         <module>spring-boot-admin-eureka</module>
         <module>spring-boot-admin-simple</module>
         <module>spring-boot-error</module>
+        <module>demo-spring-boot-starter</module>
     </modules>
 
     <build>
