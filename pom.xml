@@ -32,6 +32,7 @@
         <module>spring-boot-error</module>
         <module>demo-spring-boot-starter</module>
         <module>demo_starter</module>
+        <module>spring-boot-servlet</module>
     </modules>
 
     <build>
